@@ -22,7 +22,6 @@ Lobs is a local-first system that orchestrates AI agents â€” it calls LLMs direc
 | Repo | What it does |
 |------|-------------|
 | [**lobs-memory-plugin**](https://github.com/lobs-ai/lobs-memory-plugin) | Plugin that connects lobs-core to lobs-memory for semantic search tools. |
-| [**lobs-mcp**](https://github.com/lobs-ai/lobs-mcp) | MCP (Model Context Protocol) server for lobs-core. |
 | [**lobs-meeting-transcriber**](https://github.com/lobs-ai/lobs-meeting-transcriber) | Transcribes meetings and feeds them into agent memory. |
 | [**lobs-youtube-ingester**](https://github.com/lobs-ai/lobs-youtube-ingester) | Ingests YouTube content into searchable memory. |
 | [**lobs-imagine**](https://github.com/lobs-ai/lobs-imagine) | Local image generation service (Stable Diffusion on MPS). Private. |
@@ -38,6 +37,7 @@ These repos are from earlier versions of the system. Kept public for reference â
 | [**lobs-dashboard**](https://github.com/lobs-ai/lobs-dashboard) | Early Swift/macOS dashboard (replaced by lobs-nexus). |
 | [**lobs-mission-control**](https://github.com/lobs-ai/lobs-mission-control) | Swift macOS app for system monitoring (replaced by lobs-nexus). |
 | [**lobs-mobile**](https://github.com/lobs-ai/lobs-mobile) | iOS companion app. |
+| [**lobs-mcp**](https://github.com/lobs-ai/lobs-mcp) | MCP (Model Context Protocol) server for lobs-core. |
 
 ## Apps
 
