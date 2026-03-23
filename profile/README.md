@@ -56,6 +56,20 @@ Side projects built with/alongside the agent system.
 
 ---
 
+## Configuration
+
+All identity and environment-specific values are config-driven — no hardcoded emails, Discord IDs, or URLs in the source. Config lives in `~/.lobs/config/`:
+
+```bash
+~/.lobs/config/
+├── lobs.json      # Git identity, gateway settings
+├── discord.json   # Bot token, owner ID, channel policies
+├── models.json    # LLM model configuration
+└── google.json    # Google OAuth settings
+```
+
+See each repo's README for full config schema.
+
 ## How It Works
 
 ```
