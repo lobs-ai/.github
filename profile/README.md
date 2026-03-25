@@ -22,6 +22,7 @@ Lobs is a local-first system that orchestrates AI agents — it calls LLMs direc
 | Repo | What it does |
 |------|-------------|
 | [**lobs-sentinel**](https://github.com/lobs-ai/lobs-sentinel) | Persistent single-purpose AI agents for GitHub — PR review, issue triage, auto-labeling. Runs in Docker. |
+| [**lobs-voice**](https://github.com/lobs-ai/lobs-voice) | Local STT + TTS sidecar services for Discord voice integration. Whisper.cpp for speech-to-text, Chatterbox for text-to-speech. |
 | [**lobs-memory-plugin**](https://github.com/lobs-ai/lobs-memory-plugin) | Plugin that connects lobs-core to lobs-memory for semantic search tools. |
 | [**lobs-meeting-transcriber**](https://github.com/lobs-ai/lobs-meeting-transcriber) | Transcribes meetings and feeds them into agent memory. |
 | [**lobs-youtube-ingester**](https://github.com/lobs-ai/lobs-youtube-ingester) | Ingests YouTube content into searchable memory. |
