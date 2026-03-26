@@ -12,7 +12,7 @@ Lobs is a local-first system that orchestrates AI agents — it calls LLMs direc
 
 | Repo | What it does |
 |------|-------------|
-| [**lobs-core**](https://github.com/lobs-ai/lobs-core) | The engine. TypeScript agent runtime with LLM execution loop, orchestrator, task workflows, context engine, and CLI. |
+| [**lobs-core**](https://github.com/lobs-ai/lobs-core) | The engine. TypeScript agent runtime with LLM execution loop, orchestrator, task workflows, context engine, Discord bot, voice pipeline, live meeting transcription, and CLI. |
 | [**lobs-nexus**](https://github.com/lobs-ai/lobs-nexus) | Web dashboard (React/Vite). Task management, worker monitoring, agent chat, real-time system view. |
 | [**lobs-memory**](https://github.com/lobs-ai/lobs-memory) | Persistent search server. Hybrid BM25 + vector search, neural reranking, file watching, temporal decay. |
 | [**lobs-vim**](https://github.com/lobs-ai/lobs-vim) | Neovim plugin. AI coding agent where reasoning runs on the server, tools execute locally in your editor. |
