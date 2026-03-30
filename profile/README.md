@@ -16,6 +16,7 @@ Lobs is a local-first system that orchestrates AI agents — it calls LLMs direc
 | [**lobs-nexus**](https://github.com/lobs-ai/lobs-nexus) | Web dashboard (React/Vite). Task management, worker monitoring, agent chat, live meeting transcription, brain dump capture, real-time system view. |
 | [**lobs-memory**](https://github.com/lobs-ai/lobs-memory) | Persistent search server. Hybrid BM25 + vector search, neural reranking, file watching, temporal decay. |
 | [**lobs-vim**](https://github.com/lobs-ai/lobs-vim) | Neovim plugin. AI coding agent where reasoning runs on the server, tools execute locally in your editor. |
+| [**lobs-brain**](https://github.com/lobs-ai/lobs-brain) | Agent personality, memory, learnings, project docs, and agent configs. The knowledge base that persists across sessions. Private. |
 
 ## Integrations & Tools
 
@@ -23,9 +24,7 @@ Lobs is a local-first system that orchestrates AI agents — it calls LLMs direc
 |------|-------------|
 | [**lobs-sentinel**](https://github.com/lobs-ai/lobs-sentinel) | Persistent single-purpose AI agents for GitHub — PR review, issue triage, auto-labeling. Runs in Docker. |
 | [**lobs-voice**](https://github.com/lobs-ai/lobs-voice) | Local STT + TTS sidecar services for Discord voice integration. Whisper.cpp for speech-to-text, Chatterbox for text-to-speech. |
-| [**lobs-memory-plugin**](https://github.com/lobs-ai/lobs-memory-plugin) | Plugin that connects lobs-core to lobs-memory for semantic search tools. |
 | [**lobs-meeting-transcriber**](https://github.com/lobs-ai/lobs-meeting-transcriber) | Transcribes meetings and feeds them into agent memory. |
-| [**lobs-youtube-ingester**](https://github.com/lobs-ai/lobs-youtube-ingester) | Ingests YouTube content into searchable memory. |
 | [**lobs-imagine**](https://github.com/lobs-ai/lobs-imagine) | Local image generation service (Stable Diffusion on MPS). Private. |
 
 ## Legacy / Earlier Iterations
@@ -34,7 +33,7 @@ These repos are from earlier versions of the system. Kept public for reference �
 
 | Repo | What it was |
 |------|------------|
-| [**lobs-server**](https://github.com/lobs-ai/lobs-server) | v6-era Python server (before the TypeScript rewrite). |
+| [**lobs-server**](https://github.com/lobs-ai/lobs-server) | v4/v5-era Python server (replaced by lobs-core TypeScript rewrite). |
 | [**lobs-orchestrator**](https://github.com/lobs-ai/lobs-orchestrator) | v5-era Python orchestrator (now built into lobs-core). |
 | [**lobs-dashboard**](https://github.com/lobs-ai/lobs-dashboard) | Early Swift/macOS dashboard (replaced by lobs-nexus). |
 | [**lobs-mission-control**](https://github.com/lobs-ai/lobs-mission-control) | Swift macOS app for system monitoring (replaced by lobs-nexus). |
@@ -47,14 +46,14 @@ Side projects built with/alongside the agent system.
 
 | Repo | What it is |
 |------|-----------|
-| [**over-the-horizon**](https://github.com/lobs-ai/over-the-horizon) | iOS AR app — overlays location names on live camera feed. |
-| [**grandmas-stories**](https://github.com/lobs-ai/grandmas-stories) | iOS app for recording and sharing family stories. |
+| [**lobslab-apps**](https://github.com/lobs-ai/lobslab-apps) | Web apps hosted on lobslab.com — Crapuler (UMich course watchlist), Ballz (physics sandbox), Stellar Siege (cosmic RTS). Docker + Caddy. |
 
 ## Other
 
 | Repo | |
 |------|---|
 | [**lobs-ai.github.io**](https://github.com/lobs-ai/lobs-ai.github.io) | Public website at [lobslab.com](https://lobslab.com). Architecture deep-dive, build timeline, war stories. |
+| [**lobslab-infra**](https://github.com/lobs-ai/lobslab-infra) | Infrastructure and deployment for lobslab.com services. Docker Compose, Caddy config, monitoring. |
 
 ---
 
