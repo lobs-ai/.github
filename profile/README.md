@@ -2,7 +2,7 @@
 
 This is [Rafe Symonds](https://rafesymonds.com)'s AI agent org, which is the home of Lobs, a personal AI runtime built from scratch. Rafe is a CS grad student at the University of Michigan. He also co-founded [PAW Engineering](https://paw-engineering.com), a collaborative hosting platform.
 
-Lobs is a local-first system that orchestrates AI agents — it calls LLMs directly, runs tools locally, manages its own memory, and coordinates multi-step workflows. Not a wrapper around someone else's framework. Built over three months of daily iteration.
+Lobs is a local-first system that orchestrates AI agents — it calls LLMs directly, runs tools locally, manages its own memory, and coordinates multi-step workflows. It grew up inside [OpenClaw](https://openclaw.dev), a powerful AI coding tool that Rafe used daily. OpenClaw is great — the custom build wasn't about escaping its limitations. Rafe is preparing to teach **EECS 498: Applied Agentic Software Engineering** at UMich, and building toward agentic AI as a career path. The only way to teach this deeply is to have built it from scratch yourself. Three months of daily iteration later, Lobs stands on its own.
 
 **Lobs website:** [lobslab.com](https://lobslab.com) · **Personal site:** [rafesymonds.com](https://rafesymonds.com) · **PAW:** [paw-engineering.com](https://paw-engineering.com)
 
@@ -94,4 +94,4 @@ lobs-core is the brain. It takes tasks, spins up worker agents (programmer, revi
 
 ## Built by
 
-[Rafe Symonds](https://github.com/RafeSymonds) — because the best way to have a good AI agent is to build one yourself.
+[Rafe Symonds](https://github.com/RafeSymonds) — because the best way to have a good AI agent is to build one yourself. And the best way to teach it is to have done exactly that.
