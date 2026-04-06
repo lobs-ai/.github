@@ -25,6 +25,8 @@ Lobs is a local-first system that orchestrates AI agents — it calls LLMs direc
 | [**lobs-sentinel**](https://github.com/lobs-ai/lobs-sentinel) | Persistent single-purpose AI agents for GitHub — PR review, issue triage, auto-labeling. Runs in Docker. |
 | [**lobs-voice**](https://github.com/lobs-ai/lobs-voice) | Local STT + TTS sidecar services for Discord voice integration. Whisper.cpp for speech-to-text, Chatterbox for text-to-speech. |
 | [**lobs-meeting-transcriber**](https://github.com/lobs-ai/lobs-meeting-transcriber) | Transcribes meetings and feeds them into agent memory. |
+| [**lobs-youtube-ingester**](https://github.com/lobs-ai/lobs-youtube-ingester) | YouTube content ingestion into searchable agent memory. |
+| [**lobs-memory-plugin**](https://github.com/lobs-ai/lobs-memory-plugin) | OpenClaw plugin for lobs-memory search integration. |
 | [**lobs-imagine**](https://github.com/lobs-ai/lobs-imagine) | Local image generation service (Stable Diffusion on MPS). Private. |
 
 ## Legacy / Earlier Iterations
@@ -54,6 +56,8 @@ Side projects built with/alongside the agent system.
 |------|---|
 | [**lobs-ai.github.io**](https://github.com/lobs-ai/lobs-ai.github.io) | Public website at [lobslab.com](https://lobslab.com). Architecture deep-dive, build timeline, war stories. |
 | [**lobslab-infra**](https://github.com/lobs-ai/lobslab-infra) | Infrastructure and deployment for lobslab.com services. Docker Compose, Caddy config, monitoring. |
+| [**over-the-horizon**](https://github.com/lobs-ai/over-the-horizon) | iOS AR app — overlays location names on live camera feed. |
+| [**grandmas-stories**](https://github.com/lobs-ai/grandmas-stories) | iOS app for recording and sharing family stories. |
 
 ---
 
