@@ -39,7 +39,7 @@ These repos are from earlier versions of the system. Kept public for reference �
 | [**lobs-orchestrator**](https://github.com/lobs-ai/lobs-orchestrator) | v5-era Python orchestrator (now built into lobs-core). |
 | [**lobs-dashboard**](https://github.com/lobs-ai/lobs-dashboard) | Early Swift/macOS dashboard (replaced by lobs-nexus). |
 | [**lobs-mission-control**](https://github.com/lobs-ai/lobs-mission-control) | Swift macOS app for system monitoring (replaced by lobs-nexus). |
-| [**lobs-mobile**](https://github.com/lobs-ai/lobs-mobile) | iOS companion app. |
+| [**lobs-mobile**](https://github.com/lobs-ai/lobs-mobile) | iOS companion app — Nexus dashboard on mobile, live meeting view, task management. |
 | [**lobs-mcp**](https://github.com/lobs-ai/lobs-mcp) | MCP (Model Context Protocol) server for lobs-core. |
 
 ## Apps
@@ -58,6 +58,21 @@ Side projects built with/alongside the agent system.
 | [**lobslab-infra**](https://github.com/lobs-ai/lobslab-infra) | Infrastructure and deployment for lobslab.com services. Docker Compose, Caddy config, monitoring. |
 | [**over-the-horizon**](https://github.com/lobs-ai/over-the-horizon) | iOS AR app — overlays location names on live camera feed. |
 | [**grandmas-stories**](https://github.com/lobs-ai/grandmas-stories) | iOS app for recording and sharing family stories. |
+
+## Apps & Side Projects
+
+| Repo | What it is |
+|------|-----------|
+| [**companion**](https://github.com/lobs-ai/companion) | Personal AI desktop agent with permanent memory and deep project context. |
+| [**agentic**](https://github.com/lobs-ai/agentic) | Modular TypeScript toolkit for building AI agents. |
+| [**jot**](https://github.com/lobs-ai/jot) | Local AI note-taking CLI. Natural language capture, local model analysis. |
+| [**agent-replay**](https://github.com/lobs-ai/agent-replay) | Zero-config replay debugger for AI agent runs — timeline, flamegraph, step-through UI. |
+| [**hive**](https://github.com/lobs-ai/hive) | Multi-agent coordination system. |
+| [**study-buddy**](https://github.com/lobs-ai/study-buddy) | AI study companion. |
+| [**prototypes**](https://github.com/lobs-ai/prototypes) | Experimental prototypes. |
+| [**learning-sandbox**](https://github.com/lobs-ai/learning-sandbox) | Safe environment for testing agent behaviors. |
+| [**cortex**](https://github.com/lobs-ai/cortex) | Experimental agent architecture. |
+| [**lobslab-apps**](https://github.com/lobs-ai/lobslab-apps) | Web apps on lobslab.com — Crapuler, Ballz, Stellar Siege. Docker + Caddy. |
 
 ---
 
