@@ -1,115 +1,82 @@
 # lobs-ai
 
-This is [Rafe Symonds](https://rafesymonds.com)'s AI agent org, which is the home of Lobs, a personal AI runtime built from scratch. Rafe is a CS grad student at the University of Michigan. He also co-founded [PAW Engineering](https://paw-engineering.com), a collaborative hosting platform.
+This is [Rafe Symonds](https://rafesymonds.com)'s AI agent org. He builds AI systems — Lobs (personal agent runtime) and Squad (open-source multi-agent platform). CS grad student at the University of Michigan. Co-founded [PAW Engineering](https://paw-engineering.com).
 
-Lobs is a local-first system that orchestrates AI agents — it calls LLMs directly, runs tools locally, manages its own memory, and coordinates multi-step workflows. It grew up inside [OpenClaw](https://openclaw.dev), a powerful AI coding tool that Rafe used daily. OpenClaw is great — the custom build wasn't about escaping its limitations. Rafe is preparing to teach **EECS 498: Applied Agentic Software Engineering** at UMich, and building toward agentic AI as a career path. The only way to teach this deeply is to have built it from scratch yourself. Three months of daily iteration later, Lobs stands on its own.
-
-**Lobs website:** [lobslab.com](https://lobslab.com) · **Personal site:** [rafesymonds.com](https://rafesymonds.com) · **PAW:** [paw-engineering.com](https://paw-engineering.com)
+**Squad:** [github.com/lobs-ai/squad](https://github.com/lobs-ai/squad) · **LobsLab:** [lobslab.com](https://lobslab.com) · **PAW:** [paw-engineering.com](https://paw-engineering.com)
 
 ---
 
-## Core System
+## Squad · The Flagship Project
+
+**Open-source multi-agent orchestration.** Gateway-centric, connector-based, Docker-first. Subagents, tasks, and ask-user as native protocol primitives — not markdown hacks.
+
+- **Gateway-centric** — All agents register with the gateway. Session management, routing, and auth in one place.
+- **Connector ecosystem** — Discord, Slack, HTTP, CLI. One agent, many faces.
+- **Native primitives** — Tasks, subagents, and ask-user are first-class protocol types. Parallel execution without race conditions.
+- **24 LLM providers** — OpenAI, Anthropic, Google, xAI, Mistral, Groq, and 19 more. Swap providers with a config change.
+- **Plugin API** — Hooks for every lifecycle event. Memory, tools, post-processing.
+- **Docker-first** — One command to run everything.
+
+```
+git clone https://github.com/lobs-ai/squad.git
+cd squad
+docker compose up
+```
+
+---
+
+## Lobs · Personal AI Runtime
+
+Lobs is Rafe's personal AI system — a TypeScript runtime that orchestrates specialized agents, calls LLMs, runs tools locally, manages its own memory, and coordinates multi-step workflows.
 
 | Repo | What it does |
 |------|-------------|
-| [**lobs-core**](https://github.com/lobs-ai/lobs-core) | The engine. TypeScript agent runtime with LLM execution loop, orchestrator, task workflows, context engine, Discord bot, voice pipeline, live meeting transcription, and CLI. |
-| [**lobs-nexus**](https://github.com/lobs-ai/lobs-nexus) | Web dashboard (React/Vite). Task management, worker monitoring, agent chat, live meeting transcription, brain dump capture, real-time system view. |
-| [**lobs-memory**](https://github.com/lobs-ai/lobs-memory) | Persistent search server. Hybrid BM25 + vector search, neural reranking, file watching, temporal decay. |
-| [**lobs-vim**](https://github.com/lobs-ai/lobs-vim) | Neovim plugin. AI coding agent where reasoning runs on the server, tools execute locally in your editor. |
-| [**lobs-brain**](https://github.com/lobs-ai/lobs-brain) | Agent personality, memory, learnings, project docs, and agent configs. The knowledge base that persists across sessions. Private. |
+| [**lobs-core**](https://github.com/lobs-ai/lobs-core) | Engine. Agent runtime with LLM execution loop, orchestrator, task workflows, context engine, Discord bot, voice pipeline, and CLI. |
+| [**lobs-nexus**](https://github.com/lobs-ai/lobs-nexus) | Web dashboard — task management, worker monitoring, agent chat, live meeting view. |
+| [**lobs-memory**](https://github.com/lobs-ai/lobs-memory) | Search server. Hybrid BM25 + vector search with neural reranking. |
+| [**lobs-vim**](https://github.com/lobs-ai/lobs-vim) | Neovim plugin. AI coding agent with server-side reasoning and local tool execution. |
+| [**companion**](https://github.com/lobs-ai/companion) | macOS desktop agent with permanent memory and project context. |
+| [**agentic**](https://github.com/lobs-ai/agentic) | Modular TypeScript toolkit extracted from production code. LLM client, tool executor, memory, runner, config. |
 
-## Integrations & Tools
+### Integrations & Tools
 
 | Repo | What it does |
 |------|-------------|
-| [**lobs-sentinel**](https://github.com/lobs-ai/lobs-sentinel) | Persistent single-purpose AI agents for GitHub — PR review, issue triage, auto-labeling. Runs in Docker. |
-| [**lobs-voice**](https://github.com/lobs-ai/lobs-voice) | Local STT + TTS sidecar services for Discord voice integration. Whisper.cpp for speech-to-text, Chatterbox for text-to-speech. |
-| [**lobs-meeting-transcriber**](https://github.com/lobs-ai/lobs-meeting-transcriber) | Transcribes meetings and feeds them into agent memory. |
-| [**lobs-youtube-ingester**](https://github.com/lobs-ai/lobs-youtube-ingester) | YouTube content ingestion into searchable agent memory. |
-| [**lobs-memory-plugin**](https://github.com/lobs-ai/lobs-memory-plugin) | OpenClaw plugin for lobs-memory search integration. |
-| [**lobs-imagine**](https://github.com/lobs-ai/lobs-imagine) | Local image generation service (Stable Diffusion on MPS). Private. |
+| [**lobs-sentinel**](https://github.com/lobs-ai/lobs-sentinel) | GitHub agents for PR review and issue triage. |
+| [**lobs-voice**](https://github.com/lobs-ai/lobs-voice) | STT + TTS sidecars for Discord. Whisper.cpp + Chatterbox. |
+| [**lobs-meeting-transcriber**](https://github.com/lobs-ai/lobs-meeting-transcriber) | Meeting transcription into agent memory. |
+| [**lobs-youtube-ingester**](https://github.com/lobs-ai/lobs-youtube-ingester) | YouTube ingestion into searchable memory. |
+| [**lobs-memory-plugin**](https://github.com/lobs-ai/lobs-memory-plugin) | OpenClaw plugin for lobs-memory search. |
 
-## Legacy / Earlier Iterations
-
-These repos are from earlier versions of the system. Kept public for reference — lobs-core is the current runtime.
+### Legacy (replaced by lobs-core)
 
 | Repo | What it was |
 |------|------------|
-| [**lobs-server**](https://github.com/lobs-ai/lobs-server) | v4/v5-era Python server (replaced by lobs-core TypeScript rewrite). |
-| [**lobs-orchestrator**](https://github.com/lobs-ai/lobs-orchestrator) | v5-era Python orchestrator (now built into lobs-core). |
-| [**lobs-dashboard**](https://github.com/lobs-ai/lobs-dashboard) | Early Swift/macOS dashboard (replaced by lobs-nexus). |
-| [**lobs-mission-control**](https://github.com/lobs-ai/lobs-mission-control) | Swift macOS app for system monitoring (replaced by lobs-nexus). |
-| [**lobs-mobile**](https://github.com/lobs-ai/lobs-mobile) | iOS companion app — Nexus dashboard on mobile, live meeting view, task management. |
-| [**lobs-mcp**](https://github.com/lobs-ai/lobs-mcp) | MCP (Model Context Protocol) server for lobs-core. |
+| lobs-server | v4/v5 Python server |
+| lobs-orchestrator | v5 Python orchestrator |
+| lobs-dashboard | Early Swift dashboard |
+| lobs-mission-control | Swift system monitor |
+| lobs-mobile | iOS companion app |
+| lobs-mcp | MCP server |
 
-## Apps
-
-Side projects built with/alongside the agent system.
-
-| Repo | What it is |
-|------|-----------|
-| [**lobslab-apps**](https://github.com/lobs-ai/lobslab-apps) | Web apps hosted on lobslab.com — Crapuler (UMich course watchlist), Ballz (physics sandbox), Stellar Siege (cosmic RTS). Docker + Caddy. |
-
-## Apps & Side Projects
-
-| Repo | What it is |
-|------|-----------|
-| [**companion**](https://github.com/lobs-ai/companion) | Personal AI desktop agent with permanent memory and deep project context. |
-| [**agentic**](https://github.com/lobs-ai/agentic) | Modular TypeScript toolkit for building AI agents. |
-| [**jot**](https://github.com/lobs-ai/jot) | Local AI note-taking CLI. Natural language capture, local model analysis. |
-| [**agent-replay**](https://github.com/lobs-ai/agent-replay) | Zero-config replay debugger for AI agent runs — timeline, flamegraph, step-through UI. |
-| [**hive**](https://github.com/lobs-ai/hive) | Multi-agent coordination system. |
-| [**study-buddy**](https://github.com/lobs-ai/study-buddy) | AI study companion. |
-| [**cortex**](https://github.com/lobs-ai/cortex) | Structured-first executive assistant — Postgres-backed task/calendar reasoning with four AI roles. |
-| [**prototypes**](https://github.com/lobs-ai/prototypes) | Experimental prototypes. |
-| [**learning-sandbox**](https://github.com/lobs-ai/learning-sandbox) | Safe environment for testing agent behaviors. |
-| [**over-the-horizon**](https://github.com/lobs-ai/over-the-horizon) | iOS AR app — overlays location names on live camera feed. |
-| [**grandmas-stories**](https://github.com/lobs-ai/grandmas-stories) | iOS app for recording and sharing family stories. | |
+---
 
 ## Side Projects & Experiments
 
 | Repo | What it is |
 |------|-----------|
-| [**squad**](https://github.com/lobs-ai/squad) | Open-source multi-agent orchestration platform. Gateway-centric, connector-based, Docker-first. |
+| [**cortex**](https://github.com/lobs-ai/cortex) | Structured-first executive assistant. Postgres-backed task/calendar reasoning with four AI roles. |
+| [**jot**](https://github.com/lobs-ai/jot) | Local AI note-taking CLI. Natural language capture, local model analysis. |
+| [**agent-replay**](https://github.com/lobs-ai/agent-replay) | Replay debugger for agent runs — timeline, flamegraph, step-through UI. |
+| [**hive**](https://github.com/lobs-ai/hive) | Multi-agent coordination system. |
+| [**study-buddy**](https://github.com/lobs-ai/study-buddy) | AI study companion. |
+| [**prototypes**](https://github.com/lobs-ai/prototypes) | Experimental prototypes. |
+| [**over-the-horizon**](https://github.com/lobs-ai/over-the-horizon) | iOS AR app — overlays location names on live camera feed. |
+| [**grandmas-stories**](https://github.com/lobs-ai/grandmas-stories) | iOS app for recording family stories. |
 | [**lobslab-apps**](https://github.com/lobs-ai/lobslab-apps) | Web apps on lobslab.com — Crapuler, Ballz, Stellar Siege. Docker + Caddy. |
 
 ---
 
-## Configuration
-
-All identity and environment-specific values are config-driven — no hardcoded emails, Discord IDs, or URLs in the source. Config lives in `~/.lobs/config/`:
-
-```bash
-~/.lobs/config/
-├── lobs.json      # Git identity, gateway settings
-├── discord.json   # Bot token, owner ID, channel policies
-├── models.json    # LLM model configuration
-└── google.json    # Google OAuth settings
-```
-
-See each repo's README for full config schema.
-
-## How It Works
-
-```
-You (Neovim / Dashboard / Discord / CLI)
-        │
-        ▼
-   ┌─────────┐
-   │lobs-core │ ← Orchestrator, agent runner, context engine
-   └────┬─────┘
-        │
-   ┌────┴────────────────────┐
-   │                         │
-   ▼                         ▼
-┌──────────┐          ┌───────────┐
-│lobs-nexus│          │lobs-memory│
-│(dashboard)│          │ (search)  │
-└──────────┘          └───────────┘
-```
-
-lobs-core is the brain. It takes tasks, spins up worker agents (programmer, reviewer, architect, researcher, writer), calls LLMs (Anthropic, OpenRouter, local models via LM Studio), executes tools, and manages the full lifecycle. Memory persists across sessions via lobs-memory. The dashboard and vim plugin are interfaces into the same system.
-
 ## Built by
 
-[Rafe Symonds](https://github.com/RafeSymonds) — because the best way to have a good AI agent is to build one yourself. And the best way to teach it is to have done exactly that.
+[Rafe Symonds](https://github.com/RafeSymonds)
