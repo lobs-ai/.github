@@ -50,15 +50,6 @@ Side projects built with/alongside the agent system.
 |------|-----------|
 | [**lobslab-apps**](https://github.com/lobs-ai/lobslab-apps) | Web apps hosted on lobslab.com — Crapuler (UMich course watchlist), Ballz (physics sandbox), Stellar Siege (cosmic RTS). Docker + Caddy. |
 
-## Other
-
-| Repo | |
-|------|---|
-| [**lobs-ai.github.io**](https://github.com/lobs-ai/lobs-ai.github.io) | Public website at [lobslab.com](https://lobslab.com). Architecture deep-dive, build timeline, war stories. |
-| [**lobslab-infra**](https://github.com/lobs-ai/lobslab-infra) | Infrastructure and deployment for lobslab.com services. Docker Compose, Caddy config, monitoring. |
-| [**over-the-horizon**](https://github.com/lobs-ai/over-the-horizon) | iOS AR app — overlays location names on live camera feed. |
-| [**grandmas-stories**](https://github.com/lobs-ai/grandmas-stories) | iOS app for recording and sharing family stories. |
-
 ## Apps & Side Projects
 
 | Repo | What it is |
@@ -69,9 +60,17 @@ Side projects built with/alongside the agent system.
 | [**agent-replay**](https://github.com/lobs-ai/agent-replay) | Zero-config replay debugger for AI agent runs — timeline, flamegraph, step-through UI. |
 | [**hive**](https://github.com/lobs-ai/hive) | Multi-agent coordination system. |
 | [**study-buddy**](https://github.com/lobs-ai/study-buddy) | AI study companion. |
+| [**cortex**](https://github.com/lobs-ai/cortex) | Structured-first executive assistant — Postgres-backed task/calendar reasoning with four AI roles. |
 | [**prototypes**](https://github.com/lobs-ai/prototypes) | Experimental prototypes. |
 | [**learning-sandbox**](https://github.com/lobs-ai/learning-sandbox) | Safe environment for testing agent behaviors. |
-| [**cortex**](https://github.com/lobs-ai/cortex) | Experimental agent architecture. |
+| [**over-the-horizon**](https://github.com/lobs-ai/over-the-horizon) | iOS AR app — overlays location names on live camera feed. |
+| [**grandmas-stories**](https://github.com/lobs-ai/grandmas-stories) | iOS app for recording and sharing family stories. | |
+
+## Side Projects & Experiments
+
+| Repo | What it is |
+|------|-----------|
+| [**squad**](https://github.com/lobs-ai/squad) | Open-source multi-agent orchestration platform. Gateway-centric, connector-based, Docker-first. |
 | [**lobslab-apps**](https://github.com/lobs-ai/lobslab-apps) | Web apps on lobslab.com — Crapuler, Ballz, Stellar Siege. Docker + Caddy. |
 
 ---
