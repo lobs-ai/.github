@@ -47,6 +47,8 @@ Lobs is Rafe's personal AI system — a TypeScript runtime that orchestrates spe
 | [**lobs-meeting-transcriber**](https://github.com/lobs-ai/lobs-meeting-transcriber) | Meeting transcription into agent memory. |
 | [**lobs-youtube-ingester**](https://github.com/lobs-ai/lobs-youtube-ingester) | YouTube ingestion into searchable memory. |
 | [**lobs-memory-plugin**](https://github.com/lobs-ai/lobs-memory-plugin) | OpenClaw plugin for lobs-memory search. |
+| [**lobs-mobile**](https://github.com/lobs-ai/lobs-mobile) | iOS companion app. Task management, push notifications, agent chat on the go. |
+| [**lobs-mcp**](https://github.com/lobs-ai/lobs-mcp) | MCP server — Model Context Protocol integration for Lobs as an AI tool backend. |
 
 ### Legacy (replaced by lobs-core)
 
@@ -56,8 +58,6 @@ Lobs is Rafe's personal AI system — a TypeScript runtime that orchestrates spe
 | lobs-orchestrator | v5 Python orchestrator |
 | lobs-dashboard | Early Swift dashboard |
 | lobs-mission-control | Swift system monitor |
-| lobs-mobile | iOS companion app |
-| lobs-mcp | MCP server |
 
 ---
 
@@ -74,6 +74,7 @@ Lobs is Rafe's personal AI system — a TypeScript runtime that orchestrates spe
 | [**over-the-horizon**](https://github.com/lobs-ai/over-the-horizon) | iOS AR app — overlays location names on live camera feed. |
 | [**grandmas-stories**](https://github.com/lobs-ai/grandmas-stories) | iOS app for recording family stories. |
 | [**lobslab-apps**](https://github.com/lobs-ai/lobslab-apps) | Web apps on lobslab.com — Crapuler, Ballz, Stellar Siege. Docker + Caddy. |
+| [**lobslab-infra**](https://github.com/lobs-ai/lobslab-infra) | Infrastructure as code for lobslab.com — Docker Compose, Caddy, Cloudflare, and deployment configs. |
 
 ---
 
