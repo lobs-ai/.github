@@ -1,6 +1,6 @@
 # lobs-ai
 
-This is [Rafe Symonds](https://rafesymonds.com)'s AI agent org. He builds AI systems — Lobs (personal agent runtime) and Squad (open-source multi-agent platform). CS grad student at the University of Michigan. Co-founded [PAW Engineering](https://paw-engineering.com).
+This is [Rafe Symonds](https://rafesymonds.com)'s AI agent org. He builds AI systems — Lobs (personal agent runtime) and Squad (open-source multi-agent platform). CS grad student at the University of Michigan.
 
 **Squad:** [github.com/lobs-ai/squad](https://github.com/lobs-ai/squad) · **LobsLab:** [lobslab.com](https://lobslab.com) · **PAW:** [paw-engineering.com](https://paw-engineering.com)
 
